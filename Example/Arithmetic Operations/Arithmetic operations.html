@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+	<style>
+	.main{
+	box-shadow:0px 0px 4px 2px #aaa;
+	position:absolute;
+	margin:auto;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	padding:100px;
+	border-radius:10%;
+	}
+	
+	#result{
+	border:2px solid violet;
+	height:100px;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+	<h1>Arithmetic operations</h1>
+    <label for="num1" >Enter Number one:</label>
+    <input type="number" name="num2" id="num1"/>
+    <br><br>
+    <label for="num2">Enter Number two:</label>
+    <input type="number" name="num2" id="num2">
+    <br><br>
+    <label for="swap">To Swap values</label>
+    <input type="button" value="swap" onclick="swap()">
+    <br><br>
+    <h2>Operations</h2>
+    <button onclick="fun(1)">+</button>
+    <button onclick="fun(2)">-</button>
+    <button onclick="fun(3)">*</button>
+    <button onclick="fun(4)">/</button>
+    <button onclick="fun(5)">%</button>
+    <button onclick="fun(6)">pow(number1,number2)</button>
+	<br/>
+	<br/>
+	Result:
+    <p id="result"></p>
+	</div>
+    <script>
+        function swap(){
+            let a=document.getElementById("num1").value;
+            document.getElementById("num1").value=document.getElementById("num2").value;
+            document.getElementById("num2").value=a;
+        }
+        function fun(num){
+            let a=parseInt(document.getElementById("num1").value);
+            let b=parseInt(document.getElementById("num2").value);
+            let output;
+            switch(num){
+                case 1:output=a+b;
+                break;
+                case 2:output=a-b;
+                break;
+                case 3:output=a*b;
+                break;
+                case 4:output=a/b;
+                break;
+				case 5:output=a%b;
+				break;
+                case 6:output=Math.pow(a,b);
+                break;
+            }
+            document.getElementById("result").innerHTML=output;
+        }
+    </script>
+</body>
+</html>

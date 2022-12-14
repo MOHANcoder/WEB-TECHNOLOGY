@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            list-style: none;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .container>li {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .container a {
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+
+        .container a:hover {
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .home {
+            margin-left: auto;
+        }
+
+        .webimg {
+            width: 100%;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        header {
+            background-color: deepskyblue;
+            padding: 10px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="title">WebTechnology</li>
+                <li class="home"><a href="../index.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img class="webimg"
+            src="https://www.nicepng.com/png/full/24-246066_we-are-committed-to-adopt-new-technologies-as.png"
+            alt="web Technology">
+    </section>
+    <section>
+        <h1>Introducing HTML and XHTML</h1>
+        <article>
+            <h2>HTML (Hypertext Markup Language)</h2>
+            Even if you have never seen any HTML (Hypertext Markup Language) code, you may be familiar with
+            the fact that it is used to create most web pages. There have been several versions of HTML since the
+            Web began, and the development of the language is overseen by an organization called the W3C (World
+            Wide Web Consortium).
+            The last major version of HTML was HTML 4.01 in December 1999. In January 2000, some stricter rules
+            were added to HTML 4.01, creating what is known as XHTML (Extensible Hypertext Markup
+            Language)
+        </article>
+        <article>
+            <h2> Tags and Elements</h2>
+            you will see pairs of angle brackets
+            containing the letters “ html ” Starting on the first line, the first angled bracket looks like a less -
+            than sign,
+            then there are the letters “ html ,” followed by a second angled bracket, which looks like a greater - than
+            sign. The two brackets and all of the characters between them are known as a tag .
+            In this example, there are lots of tags and they are all in pairs; there are opening tags and closing tags .
+            The
+            closing tag is always slightly different from the opening tag in that it has a forward slash after the first
+            angled bracket: &lt;/html&gt; .
+            A pair of tags and the content these include are known as an element .
+            <img src="https://developer.mozilla.org/en-US/docs/Glossary/Element/anatomy-of-an-html-element.png" width="90%" />
+        </article>
+        <article>
+            <h2>Separating Heads from Bodies</h2>
+            Whenever you write a web page in XHTML, the whole of the page is contained between the opening
+ &lt; html &gt; and closing &lt; /html &gt; tags, just as it was in the last example. Inside the &lt; html &gt; element, there are
+two main parts to the page:
+
+                <ul>
+                    <li>
+                        The &lt; head &gt; element: Often referred to as the head of the page, this contains information about
+the page (this is not the main content of the page). For example, it might contain a title and a
+description of the page, or instructions on where a browser can find CSS rules that explain how
+the document should look. It consists of the opening &lt; head &gt; tag, the closing &lt; /head &gt; tag, and
+everything in between.
+                    </li>
+                    <li>
+                        The &lt; body &gt; element: Often referred to as the body of the page, this contains the information
+you actually see in the main browser window. It consists of the opening &lt; body &gt; tag, closing
+&lt; /body &gt; tag, and everything in between.
+                    </li>
+                </ul>
+
+ Together, the &lt; html &gt; , &lt; head &gt; , and &lt; body &gt; elements make up the skeleton of an XHTML document —
+ they are the foundation upon which every web page is built.
+ Inside the &lt; head &gt; element of the first example page, you can see a &lt; title &gt; element:
+ &lt; head &gt;
+ &lt; title &gt; Popular Websites: Google &lt; /title &gt;
+ &lt; /head &gt; 
+
+            <h3>Example</h3>
+            <pre style="overflow-x: scroll;">
+    <code>
+        &lt;!DOCTYPE html&gt;    
+        &lt;html&gt;        
+            &lt;body&gt;            
+
+                &lt;p&gt;        
+                    This paragraph contains a lot of lines in the source code, but the browser ignores it.                    
+                &lt;/p&gt;        
+
+                &lt;p&gt;        
+                            This paragraph
+                           contains      a lot of spaces
+                    in the source     code,                    
+                     but the    browser  ignores it.                  
+                                                                 
+                &lt;/p&gt;        
+
+                &lt;p&gt;        
+                The number of lines in a paragraph depends on the size of the browser window.
+                If you resize the browser window, the number of lines in this paragraph will change.        
+                &lt;/p&gt;
+
+                &lt;/body&gt;
+                &lt;/html&gt;
+
+
+                </code>
+            </pre>
+        </article>
+    </section>
+    <footer>
+        <div class="csimg">
+            <img src="../cs.png" alt="" width="100%">
+        </div>
+        This website is contributed by 2021<sup>th</sup> Batch Computer Science students.
+    </footer>
+</body>
+
+</html>

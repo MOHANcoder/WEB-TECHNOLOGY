@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            list-style: none;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .container>li {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .container a{
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+
+        .container a:hover {
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .home{
+            margin-left: auto;
+        }
+
+        .webimg{
+            width: 100%;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        header {
+            background-color: deepskyblue;
+            padding: 10px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        footer{
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="title">WebTechnology</li>
+                <li class="home"><a href="../index.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img class="webimg" src="https://www.nicepng.com/png/full/24-246066_we-are-committed-to-adopt-new-technologies-as.png" alt="web Technology">
+    </section>
+    <section>
+        <h1>Practical Tips for Writing Scripts</h1>
+        <article>
+            <h2>Reusable Functions</h2>
+            Along with reusing other people's scripts and folders, you can also write code that you can reuse
+yourself.Rather than writing a new script for each site, you can create a script that you can use on any contact form you write. So, you should aim to make your code as reusable as possible, rather than writing a script that will only
+work with one page.
+        </article>
+        <article>
+            <h2> Using External JavaScript Files</h2>
+            Whenever you are going to use a script in more than one page it' s a good idea to place it in an external
+JavaScript file. Rather than including this
+script on every page, if the script lives in an external JavaScript file:
+<ul>
+    <li> You do not have to copy and paste the same code into several files.</li>
+    <li>The file size of the pages is smaller because the JavaScript is in one file that is included on each
+        page rather than repeated in multiple pages. </li>
+        <li> If you need to change something about the script, you need to change only the one script, not
+            every page that uses it.</li>
+</ul>
+        </article>
+        <article>
+            <h2>Place Scripts in a Scripts Folder</h2>
+            When you use external scripts you should create a special scripts folder — just as you would an
+images folder. This helps improve the organization of your site and your directory structure. Whenever
+you need to look at or change a script, you know exactly where it will be.
+ You should also use intuitive names for your script files so that you can find them quickly and easily.
+        </article>
+    </section>
+    <footer>
+        <div class="csimg">
+            <img src="../cs.png" alt="" width="100%">
+        </div>
+        This website is contributed by 2021<sup>th</sup> Batch Computer Science students.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container>li {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.container a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.container a:hover {
+    background-color: white;
+    color: deepskyblue;
+}
+
+.home {
+    margin-left: auto;
+}
+
+.webimg {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+header {
+    background-color: deepskyblue;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+footer {
+    background-color: deepskyblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+mark {
+    background-color: inherit;
+    font-weight: bolder;
+    color: burlywood;
+}
+
+pre {
+    background-color: rgb(66, 66, 66);
+    color: white;
+    font-weight: bolder;
+}
+
+article{
+    padding: 5px;
+    text-align: justify;
+}
+
+purple{
+    color: rgb(201, 57, 201);
+}
+
+str{
+    color: rgb(24, 168, 24);
+}
+
+parenthesis{
+    color: darkcyan;
+}

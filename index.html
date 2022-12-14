@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTechnology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            word-wrap: break-word;
+        }
+
+        header {
+            background-color: deepskyblue;
+            padding: 10px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0;
+        }
+
+        ul li {
+            text-transform: uppercase;
+            font-weight: bolder;
+            word-wrap: break-word;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+
+        .units a:hover {
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .title {
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        .main {
+            display: none;
+        }
+
+        .webimg {
+            width: 100%;
+        }
+
+        @media only screen and (max-width:590px) {
+            body {
+                font-size: 15px;
+            }
+
+            ul {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .title {
+                margin: auto;
+                font-size: 15px;
+            }
+
+            .units {
+                display: none;
+                padding-top: 10px;
+            }
+
+            .main {
+                display: block;
+            }
+
+            h1 {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width:200px) {
+
+            ul {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            ul li{
+                display:inline-flex;
+                padding-left: 0;
+                margin-left: -20px;
+                font-size: 7px;
+            }
+
+            .title {
+                font-size: 10px;
+            }
+
+            .units {
+                display: none;
+                padding-top: 10px;
+            }
+
+            .main {
+                display: block;
+            }
+
+            h1 {
+                font-size: 15px;
+            }
+
+            .logo {
+                display: none;
+            }
+        }
+
+        footer {
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about {
+            box-shadow: 0px 0px 5px deepskyblue;
+            margin: 10px;
+            padding: 10px;
+            text-indent: 20%;
+            border-radius: 5%;
+        }
+
+        .about::first-letter {
+            font-size: x-large;
+            padding: 2px;
+            font-weight: bolder;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <!-- <li><img class="logo" src="logo.png" alt="WebTechnology"></li> -->
+                <li class="title">WebTechnology </li>
+                <li class="main" id="main">&equiv;</li>
+                <li class="units"><a href="unit-1.html" target="frame">Unit 1</a></li>
+                <li class="units"><a href="unit-2.html" target="frame">Unit 2</a></li>
+                <li class="units"><a href="unit-3.html" target="frame">Unit 3</a></li>
+                <li class="units"><a href="unit-4.html" target="frame">Unit 4</a></li>
+                <li class="units"><a href="unit-5.html" target="frame">Unit 5</a></li>
+                <li class="units"><a href="Example/examples.html" target="frame">EXAMPLES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>WebTechnology</h1>
+        <img class="webimg" src="https://proplusacademy.com/wp-content/uploads/2016/01/web-development-services.jpg"
+            alt="web development">
+        <p class="about">
+            Select the unit.
+        </p>
+    </section>
+    <section>
+        <iframe src="" frameborder="0" name="frame" width="100%" height="500px"></iframe>
+    </section>
+    <footer>
+        <div class="csimg">
+            <img src="cs.png" alt="" width="100%">
+        </div>
+        This website is contributed by 2021<sup>th</sup> Batch Computer Science students.
+    </footer>
+    <script>
+        document.getElementById("main").addEventListener("click", () => {
+            [...document.getElementsByClassName("units")].forEach(e => e.style.display == "block" ? e.style.display = "none" : e.style.display = "block");
+        });
+    </script>
+</body>
+
+</html>

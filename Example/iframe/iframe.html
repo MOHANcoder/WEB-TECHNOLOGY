@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframe</title>
+	<style>a{
+	background:green;
+	padding:5px;
+	text-decoration:none;
+	color:white;
+	}
+
+	p{
+		font-size: large;
+	}
+
+	h1{
+		text-decoration:underline wavy blue;
+	}
+	h2{
+		text-decoration: underline wavy #fa2;
+	}
+	</style>
+	
+</head>
+<body>
+    <h1>Iframe</h1>
+    <h2>Creating an iframe:</h2>
+    <iframe src="Fish.html" frameborder="1" width="100%" height="400px">Your browser does not support iframe tag.</iframe>
+    <h2>Creating an iframe with anchor tag.</h2>
+	<a href="https://rukminim1.flixcart.com/image/416/416/k7gikcw0/poster/f/h/7/medium-nature-wall-poster-butterfly-on-the-flower-high-original-imafpzxg8hk5ggsj.jpeg?q=70" target="myframe">Link 1</a>
+	<a href="https://i.pinimg.com/736x/9a/f8/52/9af8521cba28353bbd86649c0c0abdad.jpg" target="myframe">Link 2</a>
+	<a href="Fish.html" target="myframe">Link 3</a>
+	<br/>
+	<br/>
+	<iframe src="" width="400px" height="200px" frameborder="1" name="myframe" ></iframe>
+	<br/>
+	<br/>
+	<h2>marginheight attribute</h2>
+	<iframe src="Fish.html" width="70%" height="200px" frameborder="1" marginheight="100px"></iframe>
+	<h2>marginwidth attribute</h2>
+	<iframe src="Fish.html" width="70%" height="200px" frameborder="1" marginwidth="100px"></iframe>
+	<h2>sandbox attribute</h2>
+	<p>
+		This attribute will prevent the frame from the malcious attack. Scripts are not work when sandbox attribute is used.
+	</p>
+	<br>
+	<iframe src="Fish.html" width="70%" height="200px" frameborder="1" marginwidth="100px" sandbox></iframe>
+
+	<h2>sandbox = "allow-same-origin"</h2>
+	<iframe src="iframe.html" width="70%" height="200px" frameborder="1" marginwidth="100px" sandbox="allow-same-origin"></iframe>
+	
+	<h2>sandbox = "allow-scripts"</h2>
+	<p>
+		This allow scripts only.
+	</p>
+	<iframe src="Fish.html" width="70%" height="200px" frameborder="1" marginwidth="100px" sandbox="allow-scripts"></iframe>
+	<h2>sandbox = "allow-forms"</h2>
+	<iframe src="Fish.html" width="70%" height="200px" frameborder="1" marginwidth="100px" sandbox="allow-same-origin allow-forms"></iframe>
+
+	<h2>Creating nested frames.(srcdoc="" attribute.)</h2>
+	<iframe src="Fish.html" width="70%" height="200px" frameborder="1" marginwidth="100px" sandbox="allow-same-origin allow-forms" srcdoc='<iframe src="iframe.html" width="70%" height="200px" frameborder="1" marginwidth="100px" sandbox="allow-same-origin"></iframe>'></iframe>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Fish</title>
+        <style>
+            body,p{
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fish Image</h1>
+        <big>This is a page.</big>
+        <br>
+        <center><img width="50%" src="https://wallpapercave.com/dwp1x/wp1982015.jpg"></center>
+        <br>
+        <cite>Source : <a href="https://wallpapercave.com/dwp1x/wp1982015.jpg">www.wallpapercave.com</a></cite>
+        <br>
+        <br><br>
+        <button onclick="this.parentElement.removeChild(this)">Remove me</button>
+        <br><br>
+        <button onclick="fun()">Function call</button>
+        <br><br>
+        <form onsubmit="alert('Success')" align="center" action="success.html">
+            Simple form
+            <br><input type="text" placeholder="Your name">
+            <br><br>
+            <input type="submit" value="submit">
+            <br><br>
+        </form>
+        <script>
+            function fun(){
+                alert("Welcome!");
+            }
+        </script>
+    </body>
+</html>

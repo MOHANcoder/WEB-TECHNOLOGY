@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology</title>
+    <script src="../highlight.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="title">WebTechnology</li>
+                <li class="home"><a href="../index.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img class="webimg"
+            src="https://www.nicepng.com/png/full/24-246066_we-are-committed-to-adopt-new-technologies-as.png"
+            alt="web Technology">
+    </section>
+    <section>
+        <h1>Number Object</h1>
+        <article>
+            Number objects are used to work with numbers to do the arithmetic operations.
+            Unlike many other programming languages, JavaScript does not define different types of numbers, like
+            integers, short, long, floating-point etc.
+            JavaScript numbers are always stored as double precision floating point numbers.
+        </article>
+        <article>
+            <h2>Creating a Number object</h2>
+            The <mark>Number()</mark> constructor is used to create a new number object.
+            <pre>
+                <code>
+    var num = new Number(number);
+                </code>
+            </pre>
+
+            Example:
+
+            <pre>
+                <code>
+    var num = new Number(10);
+    document.write(num);
+    document.write(num*num);
+    document.write(new Number('Hi'));
+    document.write(new Number());
+                </code>
+            </pre>
+            Output:
+            <pre>
+        <samp>
+    10
+    100
+    NaN
+    0
+        </samp>
+    </pre>
+    When you give the non numeric value as a argument to the Number() constructor that will return <mark>NaN</mark>.
+        </article>
+    <article>
+        <h2>Number Properties</h2>
+    Below are the Properties of a Number object:
+        <ul>
+            <li>MAX_VALUE</li>
+            <li>MIN_VALUE</li>
+            <li>NaN</li>
+            <li>POSITIVE_INFINITY</li>
+            <li>NEGATIVE_INFINITY</li>
+            <li>prototype</li>
+            <li>constructor</li>
+        </ul>
+    </article>
+    <article>
+        <h2>Number Methods</h2>
+    Below are the Methods for a Number Object:
+    <ul>
+        <li>toExponential()</li>
+        <li>toFixed()</li>
+        <li>toLocaleString()</li>
+        <li>toPrecision()</li>
+        <li>toString()</li>
+        <li>valueOf()</li>
+        <li>isFinite()</li>
+    </ul>
+    </article>
+Example:
+<iframe src="NumberObjects.html" frameborder="0"></iframe>
+    </section>
+    <footer>
+        <div class="csimg">
+            <img src="../cs.png" alt="" width="100%">
+        </div>
+        This website is contributed by 2021<sup>th</sup> Batch Computer Science students.
+    </footer>
+</body>
+
+</html>

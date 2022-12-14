@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            list-style: none;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .container>li {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .container a{
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+
+        .container a:hover {
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .home{
+            margin-left: auto;
+        }
+
+        .webimg{
+            width: 100%;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        header {
+            background-color: deepskyblue;
+            padding: 10px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        footer{
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="title">WebTechnology</li>
+                <li class="home"><a href="../index.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img class="webimg" src="https://www.nicepng.com/png/full/24-246066_we-are-committed-to-adopt-new-technologies-as.png" alt="web Technology">
+    </section>
+    <section>
+        <h1>Javascript Objects</h1>
+        <article>
+            Javascript is a lightweight interpreted programming language. In JS all most "everything" is an Objects.
+            If you understand objects, you understand JavaScript.
+            <h2>Types of objects.</h2>
+            These are the main in-built objects in Javascript.
+            <ul>
+                <li>Numbers can be objects.(If defined with the <em>new</em> keyword.)</li>
+                <li>Booleans can be objects.(If defined with the <em>new</em> keyword.)</li>
+                <li>Strings can be objects.(If defined with the <em>new</em> keyword.)</li>
+                <li>Arrays are always objects.</li>
+                <li>Functions are always objects.</li>
+                <li>Maths are always objects.</li>
+                <li>Dates are always objects.</li>
+                <li>Regular Expressions are always objects.</li>
+                <li>Objects are always objects.</li>
+            </ul>           
+            <em>Don't confuse with primitive data types with primitive values. For example 17.90 is a primitive value.</em>
+        </article>
+        <article>
+            <h2>What is an object?</h2>
+            <p>In computer science, an object can be a variable, a data structure, a function, or a method. As regions of memory, they contain value and are referenced by identifiers.
+                Simply <q><em>object is a bundle of methods, data with a defined structure.</em></q>
+            We will learn more about that in further lessons.</p>
+        </article>
+    </section>
+    <footer>
+        <div class="csimg">
+            <img src="../cs.png" alt="" width="100%">
+        </div>
+        This website is contributed by 2021<sup>th</sup> Batch Computer Science students.
+    </footer>
+</body>
+
+</html>

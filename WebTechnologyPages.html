@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            list-style: none;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .container>li {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        .container a{
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+
+        .container a:hover {
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .home{
+            margin-left: auto;
+        }
+
+        .webimg{
+            width: 100%;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        header {
+            background-color: deepskyblue;
+            padding: 10px;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        footer{
+            background-color: deepskyblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container">
+                <li class="title">WebTechnology</li>
+                <li class="home"><a href="WebTechnology.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img class="webimg" src="https://www.nicepng.com/png/full/24-246066_we-are-committed-to-adopt-new-technologies-as.png" alt="web Technology">
+    </section>
+    <footer>
+        <div class="csimg">
+            <img src="cs.png" alt="" width="100%">
+        </div>
+        This website is contributed by 2021<sup>th</sup> Batch Computer Science students.
+    </footer>
+</body>
+
+</html>

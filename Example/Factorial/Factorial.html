@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+	<style>
+	textarea{
+		font-size:15px;
+		font-weight:bolder;
+	}
+	</style>
+</head>
+<body>
+    <h1 align="center" style="text-shadow:5px 5px 5px #7AB;"><font size="7">Factorial</font></h1>
+    <form name="form" align="center">
+	<label for="num" ><font size="6">Enter a number :</font></label>
+		<br/>
+		<br/>
+	<input type="number" name="num" id="num"/>
+    <input type="button" value="Result" onclick="series.value=get(parseInt(num.value))">
+    <br>
+	<br>
+    <textarea name="series" rows="10" cols="100" readonly placeholder="Factorial"></textarea>
+	</form>
+    <script>
+        function get(num){
+			if(num==1 || num==0)
+				return 1;
+			else if(num<0)
+				return "Wrong input!";
+			else
+				return num*get(num-1);
+        }
+    </script>
+</body>
+</html>

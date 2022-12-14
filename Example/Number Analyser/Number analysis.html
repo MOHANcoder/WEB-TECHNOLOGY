@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Analysis</title>
+</head>
+<body>
+    <h1>Number analyser</h1>
+    <label for="num_box">Enter numbers one by one(comma separated):</label>
+    <br>
+    <input type="text" name="num_box" id="num_box" >
+    <input type="button" value="Result" onclick="analys()">
+    <h2>Entered numbers are....</h2>
+    <p id="result">
+        
+    </p>
+    <h2>Positive numbers are....</h2>
+    <p id="positives"></p>
+    <h2>Negative numbers are....</h2>
+    <p id="negatives"></p>
+    <h2>Even numbers are....</h2>
+    <p id="evens"></p>
+    <h2>Odd numbers are....</h2>
+    <p id="odds"></p>
+    <h2>Prime numbers are....</h2>
+    <p id="primes"></p>
+    <script>
+        let arr=new Array();
+        function Id(id){return document.getElementById(id);}
+        function analys(){
+            let box = Id("num_box");
+            arr=box.value.split(',');
+            arr.forEach(element => {
+                arr[arr.indexOf(element)] = parseInt(element);
+            });
+            arr=arr.filter(function(num){ return !Number.isNaN(num);});
+            Id("result").innerHTML=arr.sort();
+            Id("positives").innerHTML=arr.filter(function(num){return num>=0;});
+            Id("negatives").innerHTML=arr.filter(function(num){return num<0;});
+            Id("odds").innerHTML=arr.filter(function(num){return num&1;});
+            Id("evens").innerHTML=arr.filter(function(num){return !(num&1);});
+            Id("primes").innerHTML=arr.filter(function(num){
+                let start=2;
+                if(num<=1) return false;
+                while(start<num){
+                    if(num%start++==0){
+                        return false;
+                    }
+                }
+                return true;
+            });
+        }
+    </script>
+</body>
+</html>

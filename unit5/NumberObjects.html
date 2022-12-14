@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+Number Objects
+</title>
+</head>
+<body>
+<form name="number" >
+<select id="properties" onchange="fun(value)">
+<optgroup label="properties">
+<option value="MAX_VALUE">MAX_VALUE</option>
+<option value="MIN_VALUE">MIN_VALUE</option>
+<option value="NaN">NaN</option>
+<option value="NEGATIVE_INFINITY">NEGATIVE_INFINITY</option>
+<option value="POSITIVE_INFINITY">POSITIVE_INFINITY</option>
+<option value=""></option>
+</optgroup>
+</select>
+<select onchange="fun2(value)">
+<optgroup label="methods" >
+<option></option>
+<option value="toString">toString()</option>
+<option value="toExponential">toExponential()</option>
+<option value="toFixed">toFixed()</option>
+<option value="toPrecision">toPrecision()</option>
+<option value="isFinite">isFinite()</option>
+</optgroup>
+</select>
+<br/>
+<br/>
+<input type="text" name="result" placeholder="Result for the selected option will show here" readonly >
+<br/>
+</form>
+<script>
+function fun(value){
+document.number.result.value=Number[value];
+}
+function fun2(value){
+if(value!="isFinite")
+document.number.result.value=(10)[value](10);
+else
+document.number.result.value=Number[value](10);
+}
+</script>
+</body>
+</html>
